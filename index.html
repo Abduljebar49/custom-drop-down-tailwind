@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+
+</head>
+
+<body>
+
+    <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button">Dropdown header <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+        </svg></button>
+
+    <div id="dropdownInformation"
+        class="z-10 w-80 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
+            <div class="grid grid-cols-4 gap-2 mt-4">
+                <div class="flex-col w-16" id="mod1">
+                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 md:4">
+                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
+                    </div>
+                    <div class="flex justify-center mt-1">
+                        <p class="text-gray-800 text-sm">individuale</p>
+                    </div>
+                </div>
+                <div class="flex-col w-16" id="mod2">
+                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
+                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
+                    </div>
+                    <div class="flex justify-center mt-1">
+                        <p class="text-gray-800 text-sm">Coppia</p>
+                    </div>
+                </div>
+                <div class="flex-col w-16" id="mod3">
+                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
+                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
+                    </div>
+                    <div class="flex justify-center mt-1">
+                        <p class="text-gray-800 text-sm">famiglia</p>
+                    </div>
+                </div>
+                <div class="flex-col w-16" id="mod4">
+                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
+                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
+                    </div>
+                    <div class="flex justify-center mt-1">
+                        <p class="text-gray-800 text-sm">Gruppo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+
+</html>
