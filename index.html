@@ -4,63 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" /> -->
 
 </head>
 
 <body>
+    <!-- component -->
+    <!-- 
+    =======================================================================
+    Name    :   Pure CSS Dropdown Menu
+    Author  :   Surjith S M
+    Twitter :   @surjithctly
 
-    <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
-        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        type="button">Dropdown header <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="m1 1 4 4 4-4" />
-        </svg></button>
+    Get more components here ? https://web3templates.com/components
 
-    <div id="dropdownInformation"
-        class="z-10 w-80 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-        <div class="px-4 py-3 text-sm text-gray-900 dark:text-white">
-            <div class="grid grid-cols-4 gap-2 mt-4">
-                <div class="flex-col w-16" id="mod1">
-                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 md:4">
-                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
-                    </div>
-                    <div class="flex justify-center mt-1">
-                        <p class="text-gray-800 text-sm">individuale</p>
-                    </div>
+    Copyright © 2021
+    =======================================================================
+ -->
+
+    <div class=" relative inline-block text-left dropdown">
+        <span class="rounded-md shadow-sm"><button
+                class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                <span>Options</span>
+                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button></span>
+        <div
+            class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+            <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                <div class="px-4 py-3">
+                    <p class="text-sm leading-5">Signed in as</p>
+                    <p class="text-sm font-medium leading-5 text-gray-900 truncate">tom@example.com</p>
                 </div>
-                <div class="flex-col w-16" id="mod2">
-                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
-                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
-                    </div>
-                    <div class="flex justify-center mt-1">
-                        <p class="text-gray-800 text-sm">Coppia</p>
-                    </div>
+                <div class="py-1">
+                    <a href="javascript:void(0)" tabindex="0"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Account settings</a>
+                    <a href="javascript:void(0)" tabindex="1"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Support</a>
+                    <span role="menuitem" tabindex="-1"
+                        class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                        aria-disabled="true">New feature (soon)</span>
+                    <a href="javascript:void(0)" tabindex="2"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">License</a>
                 </div>
-                <div class="flex-col w-16" id="mod3">
-                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
-                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
-                    </div>
-                    <div class="flex justify-center mt-1">
-                        <p class="text-gray-800 text-sm">famiglia</p>
-                    </div>
-                </div>
-                <div class="flex-col w-16" id="mod4">
-                    <div class="flex bg-gray-100  rounded-2xl justify-center py-4 ">
-                        <img class="w-10 h-10" src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg">
-                    </div>
-                    <div class="flex justify-center mt-1">
-                        <p class="text-gray-800 text-sm">Gruppo</p>
-                    </div>
+                <div class="py-1">
+                    <a href="javascript:void(0)" tabindex="3"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Sign out</a>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+    <div class=" relative inline-block text-left dropdown">
+        <span class="rounded-md shadow-sm"><button
+                class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                <span>Options</span>
+                <svg class="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button></span>
+        <div
+            class="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+            <div class="absolute right-0 w-56 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
+                aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                <div class="px-4 py-3">
+                    <p class="text-sm leading-5">Signed in as</p>
+                    <p class="text-sm font-medium leading-5 text-gray-900 truncate">tom@example.com</p>
+                </div>
+                <div class="py-1">
+                    <a href="javascript:void(0)" tabindex="0"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Account settings</a>
+                    <a href="javascript:void(0)" tabindex="1"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Support</a>
+                    <span role="menuitem" tabindex="-1"
+                        class="flex justify-between w-full px-4 py-2 text-sm leading-5 text-left text-gray-700 cursor-not-allowed opacity-50"
+                        aria-disabled="true">New feature (soon)</span>
+                    <a href="javascript:void(0)" tabindex="2"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">License</a>
+                </div>
+                <div class="py-1">
+                    <a href="javascript:void(0)" tabindex="3"
+                        class="text-gray-700 flex justify-between w-full px-4 py-2 text-sm leading-5 text-left"
+                        role="menuitem">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .dropdown:focus-within .dropdown-menu {
+            opacity: 1;
+            transform: translate(0) scale(1);
+            visibility: visible;
+        }
+    </style>
 </body>
 
 </html>
